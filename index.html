@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafío 2</title>
+    </head>
+
+<!--Hoja de estilos-->
+<link rel="stylesheet" href="css\estilos.css">
+
+<!--JavaScript-->
+<script type="text/javascript" src="js\script.js"></script>
+
+<body>
+
+<!--Calculadora de notas-->
+    <div class="div1" align="center">
+        <h1>Calcula tu promedio final</h1>
+        <h4>Calculadora válida para el cálculo de notas de la escala chilena, que va de 7.0 (nota máxima) a 1.0 (nota mínima),
+            siendo un 4.5 la nota mínima de aprobación.</h4>
+
+<!--Sección para que el usuario introduzca los valores-->
+        <input type="text" id="1nota" class="subdiv" placeholder="Nota: Certamen 1"/>
+        <input type="text" id="2nota" class="subdiv" placeholder="Nota: Certamen 2"/><br><br>
+        <input type="text" id="3nota" class="subdiv" placeholder="Nota: Asistencia"/>
+        <input type="text" id="4nota" class="subdiv" placeholder="Nota: Examen"/>
+        <button id="boton" onclick="calcularProme()">Calcular mi promedio final</button>
+    </div>
+
+<!--Sección donde se le presenta al usuario el cálculo final y un mensaje que indica si está aprobado o no-->
+    <div class="div1" align="center">
+        <h2>Mi nota final es...</h2>
+        <input type="text" id="prom" class="subdiv" placeholder="Promedio Final"/>
+        <input type="text" id="estado" class="subdiv" placeholder="Estado"/>
+    </div>
+
+</body>
+</html>
